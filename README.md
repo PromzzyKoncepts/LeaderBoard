@@ -1,56 +1,60 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# LeaderBoard
 
-> Description the project.
-
+> The leaderboard website displays scores submitted by different players. It also allows you to submit your score.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Html,JS,CSS
+- Webpack and other dependencies
+- Git, Github, linters
 
-## Live Demo (if available)
+## Setup
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
+To get a local copy up and running you'll need to have [NodeJS](https://nodejs.org/en/download/) installed on your local machine.
 
 ### Install
 
+After installing NodeJS please follow the next steps...
+
 ### Usage
 
-### Run tests
+```bash
 
-### Deployment
+npm i
+
+```
+
+-- for installing dev dependecies.
+
+```bash
+
+npm run build
+
+```
+
+-- to run the project.
+
+### Testing
+
+```bash
+
+npm run dev
 
 
 
-## Authors
+## Live Demo
 
-👤 **Author1**
+[Live Demo Link](https://promzzykoncepts.github.io/LeaderBoard/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Author
 
-👤 **Author2**
+👤 **PROMISE OKECHUKWU**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@promzzykoncepts](https://github.com/PromzzyKoncepts)
+- Twitter: [@promzzy](https://twitter.com/prOmzzy)
+- LinkedIn: [promiseokechukwu](https://linkedin.com/in/promiseokechukwu)
 
 ## 🤝 Contributing
 
@@ -64,12 +68,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
+- Microverse
 - etc
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
+```
