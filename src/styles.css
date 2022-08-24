@@ -4,6 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: beige;
 }
 
 h1 {
@@ -20,6 +21,18 @@ h1 {
 
 #refresh {
   padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: brown;
+  background-color: wheat;
+  box-shadow: 0 0 3px #5e5e5e;
+  font-weight: 600;
+}
+
+#refresh:hover {
+  background-color: rgb(0, 133, 22);
+  color: beige;
+  transition: all 0.5s ease-in;
 }
 
 .grid-container {
@@ -34,19 +47,110 @@ h1 {
 }
 
 ul {
-  border: 1px solid;
-  background-color: #f4f4f4;
+  border: none;
+  background-color: wheat;
   padding: 0;
+  box-shadow: 0 0 6px #5e5e5e;
+  border-radius: 10px;
 }
 
 li:nth-child(even) {
-  background-color: rgb(175, 175, 175);
+  background-color: rgba(165, 42, 42, 0.89);
+  color: wheat;
 }
 
 .score-display {
   width: 30%;
 }
 
+.error {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.success {
+  background-color: rgb(0, 133, 22);
+  padding: 10px;
+  border-radius: 10px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.message {
+  background-color: rgb(0, 133, 22);
+}
+
+.score-length {
+  background-color: rgb(0, 133, 22);
+  border-radius: 10px;
+  padding: 10px 13px;
+  color: #f4f4f4;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
 #submit {
   float: right;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: beige;
+  background-color: rgba(165, 42, 42, 0.89);
+  box-shadow: 0 0 3px #5e5e5e;
+  margin-top: 20px;
+}
+
+#submit:hover {
+  background-color: rgb(0, 133, 22);
+}
+
+label {
+  font-weight: 700;
+}
+
+#form {
+  width: 20%;
+  box-shadow: 0 0 3px #5e5e5e;
+  padding: 40px;
+  background-color: wheat;
+  border-radius: 7px;
+}
+
+input {
+  padding: 12px 10px;
+  outline: 0;
+  border-width: 0 0 0;
+  border-color: #282828;
+  background-color: wheat;
+}
+
+input:focus {
+  border-width: 0 0 1px;
+  border-color: brown;
+  width: 100%;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input:hover::placeholder {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
 }
