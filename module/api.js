@@ -1,4 +1,4 @@
-//function for getting result when a new game is added from the same ID
+// function for getting result when a new game is added from the same ID
 const GetScores = async () => {
   const getResult = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/owQWvuBZRBl6oZNoQKqG/scores/').then((res) => res.json());
   return getResult;

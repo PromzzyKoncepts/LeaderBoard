@@ -4,10 +4,10 @@ import { NewApiGame, GetScores } from '../module/api.js';
 const name = document.getElementById('name');
 const score = document.getElementById('score');
 
-//Here, I created the Dom Manipulation
+// Here, I created the Dom Manipulation
 const getAllScores = async () => {
   const allScores = await GetScores();
-  
+
   // Sort the Scores in alphabetical order
   allScores.result.sort((a, b) => b.score - a.score);
 
@@ -48,7 +48,7 @@ const Scores = (e) => {
       message.style.display = 'none';
     }, 6000);
   }
-  //set the input to empty string to clear it
+  // set the input to empty string to clear it
   name.value = '';
   score.value = '';
 };
