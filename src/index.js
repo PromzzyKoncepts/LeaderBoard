@@ -22,16 +22,9 @@ const getAllScores = async () => {
   totalScores.innerText = ` Total Number of Users: ${scoreLength}`;
 };
 
-// message display for successful adding
-// const dispMessage = () => {
-//   messageElt.innerText = 'Score added successfully, click "refresh" to display';
-//   messageElt.className = 'small'
 const message = document.querySelector('.message');
-// }
 
 const Scores = (e) => {
-  // const name = document.getElementById('name');
-  // const score = document.getElementById('score');
   NewApiGame();
   e.preventDefault();
   if (name.value === '' || score.value === '') {
@@ -63,6 +56,5 @@ submitBtn.addEventListener('click', Scores);
 // event handlers for the refresh button
 const refreshBtn = document.getElementById('refresh');
 refreshBtn.addEventListener('click', () => {
-  // getAllScores();
   window.location.reload();
 });
