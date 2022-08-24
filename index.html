@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeaderBoard</title>
+<script defer src="main.js"></script></head>
+
+<body>
+  <h1>LeaderBoard</h1>
+
+  <div class="grid-container">
+    <!-- the score display section -->
+    <div class="score-display">
+      <p class="message"></p>
+      <div class="score-heading">
+        <h3>Recent Scores</h3>
+        <button type="submit" id="refresh">Refresh</button>
+      </div>
+      <small></small>
+
+      <div class="show-score">
+        <ul id="score-list">
+        </ul>
+      </div>
+    </div>
+
+    <!-- the section for adding scores -->
+    <form id="form" class="add">
+      <label>Add your score</label>
+      <br>
+      <input type="text" id="name" placeholder="Your name">
+      <br>
+      <input type="text" id="score" placeholder="Your score">
+      <br>
+      <button type="button" id="submit">Submit</button>
+    </form>
+  </div>
+  <script type="module" src="../dist/main.js"></script>
+</body>
+
+</html>
