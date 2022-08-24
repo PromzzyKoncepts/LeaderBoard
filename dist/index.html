@@ -14,20 +14,15 @@
   <div class="grid-container">
     <!-- the score display section -->
     <div class="score-display">
+      <p class="message"></p>
       <div class="score-heading">
         <h3>Recent Scores</h3>
         <button type="submit" id="refresh">Refresh</button>
       </div>
+      <small></small>
 
       <div class="show-score">
-        <ul>
-          <li class="list-item">Name:100</li>
-          <li class="list-item">Name:20</li>
-          <li class="list-item">Name:50</li>
-          <li class="list-item">Name:78</li>
-          <li class="list-item">Name:125</li>
-          <li class="list-item">Name:77</li>
-          <li class="list-item">Name:42</li>
+        <ul id="score-list">
         </ul>
       </div>
     </div>
@@ -36,14 +31,14 @@
     <form id="form" class="add">
       <label>Add your score</label>
       <br>
-      <input type="text" placeholder="Your name">
+      <input type="text" id="name" placeholder="Your name">
       <br>
-      <input type="text" placeholder="Your score">
+      <input type="text" id="score" placeholder="Your score">
       <br>
-      <button type="submit" id="submit">Submit</button>
+      <button type="button" id="submit">Submit</button>
     </form>
   </div>
-  <script src="../dist/main.js"></script>
+  <script type="module" src="../dist/main.js"></script>
 </body>
 
 </html>

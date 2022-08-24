@@ -26,7 +26,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
-    "hint": "^2.0.0",
+    "hint": "^7.1.1",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.54.5",
     "sass-loader": "^13.0.2",
