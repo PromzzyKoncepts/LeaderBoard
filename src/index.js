@@ -4,9 +4,11 @@ import { NewApiGame, GetScores } from '../module/api.js';
 const name = document.getElementById('name');
 const score = document.getElementById('score');
 
+// Here, I created the Dom Manipulation
 const getAllScores = async () => {
   const allScores = await GetScores();
 
+  // Sort the Scores in alphabetical order
   allScores.result.sort((a, b) => b.score - a.score);
 
   allScores.result.forEach((item) => {
@@ -22,18 +24,13 @@ const getAllScores = async () => {
   totalScores.innerText = ` Total Number of Users: ${scoreLength}`;
 };
 
-// message display for successful adding
-// const dispMessage = () => {
-//   messageElt.innerText = 'Score added successfully, click "refresh" to display';
-//   messageElt.className = 'small'
+// function for the submit event handler
 const message = document.querySelector('.message');
-// }
-
 const Scores = (e) => {
-  // const name = document.getElementById('name');
-  // const score = document.getElementById('score');
   NewApiGame();
   e.preventDefault();
+
+  // display error message onclick submitBtn
   if (name.value === '' || score.value === '') {
     message.innerText = 'ERROR!! Please add valid user and score';
     message.style.display = 'block';
@@ -51,18 +48,18 @@ const Scores = (e) => {
       message.style.display = 'none';
     }, 6000);
   }
-
+  // set the input to empty string to clear it
   name.value = '';
   score.value = '';
 };
 getAllScores();
 
+// event handler for submit button
 const submitBtn = document.getElementById('submit');
 submitBtn.addEventListener('click', Scores);
 
 // event handlers for the refresh button
 const refreshBtn = document.getElementById('refresh');
 refreshBtn.addEventListener('click', () => {
-  // getAllScores();
   window.location.reload();
 });
